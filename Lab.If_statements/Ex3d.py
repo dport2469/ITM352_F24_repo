@@ -1,25 +1,24 @@
-def determine_progress1(hits, spins):
+def determine_progress4(hits, spins):
     if spins == 0:
         return "Get going!"
     
     hits_spins_ratio = hits / spins
+    
+    progress = {
+        0: "Get going!",
+        1: "On your way!",
+        2: "Almost there!",
+        3: "You win!"
+    }
 
-    if hits_spins_ratio > 0:
-        progress = "On your way!"
-        if hits_spins_ratio >= 0.25:
-            progress = "Almost there!"
-            if hits_spins_ratio >= 0.5:
-                if hits < spins:
-                    progress = "You win!"
-    else:
-        progress = "Get going!"
+    progress_index =  (hits_spins_ratio > 0)*1 + (hits_spins_ratio >= 0.25)*1 + (hits_spins_ratio >= 0.5 and hits < spins)*1  # note: will be 0 if none of the conditions are met
 
-    return progress
+    return progress[progress_index]
 
-
+# Test function (same as before)
 def test_determine_progress(determine_progress):
     # Test "Get going!" cases
-    assert determine_progress(1, 0) == "Get going!"
+    assert determine_progress(0, 0) == "Get going!"
     assert determine_progress(0, 10) == "Get going!"
     
     # Test "On your way!" cases
@@ -41,4 +40,4 @@ def test_determine_progress(determine_progress):
     print("All tests passed!")
 
 # Run the tests
-test_determine_progress(determine_progress1)
+test_determine_progress(determine_progress4)
