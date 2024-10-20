@@ -31,7 +31,9 @@ try:
         columns='order_type', 
         values='sales', 
         aggfunc=np.sum,
-        fill_value=0  # Fill missing values with 0
+        fill_value=0,  # Fill missing values with 0
+        margins=True, 
+        margins_name="Totals"
     )
 
     print(sales_pivot)
