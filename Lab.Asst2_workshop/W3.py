@@ -37,5 +37,37 @@ def load_csv(data_file_path):
         print("All specified columns are present in the DataFrame.")
     else:
         print("Some specified columns are missing from the DataFrame.")
+    return sales_data
 
-load_csv(test_data_file)
+
+# this function will diaplay # rows of sales data requested by the user
+def display_initial_rows(data):
+    total_rows = len(data)
+    user_input = input(f"How many initial rows would you like to see? (Enter a number up to {total_rows}, 'all', or leave empty to skip): ")
+    if user_input.lower() == "all":
+        print(data)  # Display all rows
+    elif user_input.strip() == "":
+        print("Skipping preview.")
+    else:
+        try:
+            num_rows = int(user_input)
+            if num_rows < 0:
+                print("Please enter a non-negative number.")
+            elif num_rows > total_rows:
+                print(f"Please enter a number up to {total_rows}.")
+            else:
+                print(data.head(num_rows))  # Display the specified number of rows
+                
+        except ValueError:
+            print("Invalid input. Please enter a valid number, 'all', or leave empty to skip.")
+
+
+# main
+sales_data = load_csv(test_data_file)
+# main loop
+def main():
+    while(True):
+        display_initial_rows(sales_data)
+
+if  (__name__ == "__main__"):
+    main()
