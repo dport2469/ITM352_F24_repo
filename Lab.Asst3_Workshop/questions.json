@@ -1,0 +1,112 @@
+{
+    "Music": {
+        "What is the name of the band that released the album 'Orange Blood'?": {
+            "options": ["Tomorrow X Together", "Enhypen", "New Jeans", "Le Sserafim"],
+            "correct": "Enhypen",
+            "explanation": "Enhypen released the album 'Orange Blood' on November 17, 2023. Stream Sweet Venom!!"
+        },
+        "What is the name of the 80's duo that released the song 'I'm Gonna Miss You'?": {
+            "options": ["Milli Vanilli", "Maroon 5", "Queen", "BTS"],
+            "correct": "Milli Vanilli",
+            "explanation": "Milli Vanilli released the song 'I'm Gonna Miss You' in 1989. Has the BEST edits iykyk"
+        },
+        "What is the title of Yeonjun's solo debut song?": {
+            "options": ["GGUM", "Boyfriend", "Touch", "Deja Vu"],
+            "correct": "GGUM",
+            "explanation": "Yeonjun debuted with the song 'GGUM' in September of this year. Interesting song for sure, but STEAM GGUM!!"
+        },
+        "What is Britney Spears' most popular song?": {
+            "options": ["Toxic", "Baby One More Time", "Oops!... I Did It Again", "Circus"],
+            "correct": "Toxic",
+            "explanation": "Thats what Google said. An Iconic song and an absolute BADDIE!!"
+        }
+    },
+    "Entertainment": {
+        "What is the Netflix Original Series about the Menendez Brothers Case called?": {
+            "options": ["Monsters: The Lyle and Erik Menendez Story", "Stranger Things about the Menendez", "The Menendez Brothers", "Blame It on the Menendez"],
+            "correct": "Monsters: The Lyle and Erik Menendez Story",
+            "explanation": "The series released in September of this year and has been a hit. Hilarious series but not very accurate.."
+        },
+        "What is the name of the blonde girl in the show '2 Broke Girls'?": {
+            "options": ["Caroline", "Max", "Sophie", "Oleg"],
+            "correct": "Caroline",
+            "explanation": "Caroline Channing, the billianare daughter that lost it all. GREAT show, 100/10"
+        },
+        "Who was the most subscribed YouTuber in 2020?": {
+            "options": ["PewDiePie", "T-Series", "MrBeast", "Dude Perfect"],
+            "correct": "T-Series",
+            "explanation": "One of the biggest Youtube subscriber wars in History. Oh the good old days-"
+        },
+        "As of 2024, how many seasons of Sesame Street are there?": {
+            "options": ["22", "87", "54", "6"],
+            "correct": "54",
+            "explanation": "Started in 1969 and it's still trekking on! But I swear its not as good as it used to be!!"
+        }
+    },
+    "History": {
+        "What year was the bombing of Pearl Harbor?": {
+            "options": ["1941", "1942", "1943", "1944"],
+            "correct": "1941",
+            "explanation": "The bombing of Pearl Harbor occurred in 1941. RIP to all the fallen soldiers.."
+        },
+        "Who shot Alexander Hamilton?": {
+            "options": ["Thomas Jefferson", "Aaron Burr", "George Washington", "John Adams"],
+            "correct": "Aaron Burr",
+            "explanation": "Aaron Burr shot Alexander Hamilton in a duel in 1804. If you'd watch the musical, you'd know this!"
+        },
+        "What was the name of King Henry VIII's 2nd wife?": {
+            "options": ["Jane Seymour", "Anne Boleyn", "Catherine Howard", "Anne of Cleves"],
+            "correct": "Anne Boleyn",
+        "explanation": "My girl was BEHEADED in 1536!! But she was the mother of Queen Elizabeth I so she did something right!"
+        },
+        "What year did the Titanic sink?": {
+            "options": ["1910", "1911", "1912", "1913"],
+            "correct": "1912",
+            "explanation": "Did you watch the movie?? If you did you'd know it was 1912!"
+        }
+    },
+    "Pop Culture": {
+        "What is the name of the baby hippo that has been been blowing up on TikTok lately?": {
+            "options": ["Moo Deng", "Bubbles", "Pesto", "Gloria"],
+            "correct": "Moo Deng",
+            "explanation": "Moo Deng is a baby hippo who has been gaining popularity on TikTok because he is just so adorable."
+        },
+        "Which social media platform is the most popular among Gen X?": {
+            "options": ["Instagram", "Snapchat", "TikTok", "Facebook"],
+            "correct": "Facebook",
+            "explanation": "My mom and dad are ALWAYS on Facebook.. Are yours??"
+        },
+        "What does the acronym 'SMH' stand for?": {
+            "options": ["Send Me Hummus", "SO MUCH HOMEOWRK", "Shaking My Head", "Suck My Horseradish"],
+            "correct": "Shaking My Head",
+            "explanation": "'SMH' stands for 'Shaking My Head' and is often used to express disappointment or disapproval."
+        },
+        "What is the name of the popular dance that went viral on TikTok in 2020?": {
+            "options": ["Renegade", "Savage", "WAP", "Blinding Lights"],
+            "correct": "Renegade",
+            "explanation": "The Renegade dance went viral on TikTok in 2020 and was performed by millions of users around the world."
+        }
+    },
+    "Food": {
+        "What is the name of the most popular Vietnamese soup dish?": {
+            "options": ["Pho", "Bun Bo Hue", "Banh Mi", "Bun Rieu"],
+            "correct": "Pho",
+            "explanation": "Pho is a popular Vietnamese soup dish HOWEVER there are lots of other amazing dishes you should not be afraid to try!"
+        },
+        "Which fruit is known as the 'king of fruits'?": {
+            "options": ["Apple", "Mango", "Banana", "Durian"],
+            "correct": "Durian",
+            "explanation": "Durian is often referred to as the 'king of fruits' due to its STANK and rich flavor."
+        },
+        "What fast food chain is always closed on Sundays?": {
+            "options": ["Wendy's", "Mcdonalds", "Chick-fil-a", "Jack in the Box"],
+            "correct": "Chick-fil-a",
+            "explanation": "I learned this the hard way.. I just wanted a chicken sandwich last Sunday.."
+        },
+        "What can asians not live without?": {
+            "options": ["Rice", "Noodles", "Soy Sauce", "Kimchi"],
+            "correct": "Rice",
+            "explanation": "Isn't it crazy that some people can't go a day without eating rice?"
+        }
+    }
+}
