@@ -5,7 +5,10 @@
 </head>
 <body>
     <h1>Your Quiz Result</h1>
-    <p>Your score: {{ score }} out of 5</p>
+    {% for result in the_results %}
+        Question: {{ result }}
+    {% endfor %}
+    <p>Your score: 1 out of 5</p>
     <a href="{{ url_for('index') }}">Take Quiz Again</a>
 </body>
 </html>

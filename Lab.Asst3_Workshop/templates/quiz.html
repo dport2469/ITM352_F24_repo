@@ -4,13 +4,17 @@
     <title>Quiz</title>
 </head>
 <body>
-    {{ the_question }}
-    <h1>Question 1: What is the capital of France?</h1>
-    <form method="POST">
-        <input type="radio" name="answer" value="Paris"> Paris<br>
-        <input type="radio" name="answer" value="Rome"> Rome<br>
-        <input type="radio" name="answer" value="Madrid"> Madrid<br>
-        <input type="radio" name="answer" value="Berlin"> Berlin<br>
+    <h1>Question {{ q_num }}: {{ question[0] }}</h1>
+    <form action="" method="post">
+        {% for option in question[1]['options'] %}
+            <div>
+                <input type="radio" id="{{ option }}" name="answer" value="{{ option }}">
+                <label for="{{ option }}">{{ option }}</label>
+            </div>
+        {% endfor %}
+        <br>
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>
+    

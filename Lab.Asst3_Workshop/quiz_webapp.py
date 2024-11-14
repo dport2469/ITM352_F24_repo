@@ -8,9 +8,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    global question_items
+    global question_items, question_num, results
     #Randomize the order of the questions displayed
     question_items = shuffle_questions(selected_questions)
+    question_num = 1
+    results = []
     return render_template('index.html')
 
 @app.route('/quiz', methods=['GET', 'POST'])
@@ -19,20 +21,31 @@ def thequiz():
     correct_answers = []
     total_time = 0
     bonus_points = 0
-    global question_items
+    global question_items, question_num, results
 
     if request.method == 'POST':
-        # Logic to capture the user’s answers and redirect to the result page
-        return redirect(url_for('result'))
+        # Logic to capture the user’s answers and redirect to the another question or result page
+
+        # did the user answer correctly?
+        user_answer = request.form.get('answer')
+        if user_answer == question_items[question_num - 1][1]['correct']:
+            results.append("Correct!")
+        else:
+            results.append("Incorrect!")
+        # out of questions? send to results
+        if question_num == len(question_items):
+            return render_template('result.html', the_results = results)
+        question_num = question_num + 1
     # Load the question and options to display
-    the_question = question_items[0]
-    return render_template('quiz.html', question = the_question)  # Displays the question and options
+    the_question = question_items[question_num - 1]
+    return render_template('quiz.html', question = the_question, q_num = question_num)  # Displays the question and options
 
 @app.route('/result')
 def result():
+    global results
     # Calculate and display the user's score
-    thescore = 1  # Example score for demonstration
-    return render_template('result.html', score=thescore)
+    print(results)
+    return render_template('result.html', the_results = results)
 
 #Used a defined function here for reusability and readability
 def shuffle_questions(questions):
